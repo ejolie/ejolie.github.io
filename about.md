@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm currently studying React.js and algorithms with C++.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ejisvip@gmail.com](mailto:ejisvip@gmail.com)
