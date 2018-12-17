@@ -6,7 +6,7 @@ permalink: /about/
 
 ### More Information
 
-I'm currently studying React.js and algorithms with C++.
+I'm currently studying React.js and Javascripts.
 
 ### Contact me
 
