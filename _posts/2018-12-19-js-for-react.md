@@ -1,12 +1,9 @@
 ---
 layout: post
-title: Separate Files for Classes
+title: JavaScript for React Developers
 tags:
   - JavaScript
 ---
-
-# JavaScript for React Developers
-출처 : https://youtu.be/NCwa_xi0Uuc
 
 
 ## 1. var, let, const
@@ -27,7 +24,7 @@ var는 let, const와 다른 scope를 갖고 있다.
 - const : block, read-only (cannot be changed)
 
 
-##2. objects & 3. this
+## 2. objects & 3. this
 
 ```javascript
 const person = {
@@ -105,7 +102,7 @@ const items_2 = colors.map(color => <li>${color}</li>);
 ```
 
 
-##7. object destructor
+## 7. object destructor
 
 ```javascript
 const address = {
@@ -125,7 +122,7 @@ const { street: st } = address;
 ```
 
 
-##8. spread operator
+## 8. spread operator
 
 ```javascript
 const first = [1, 2, 3];
@@ -165,7 +162,7 @@ person.walk();
 ```
 
 
-##10. inheritance
+## 10. inheritance
 
 ```javascript
 class Teacher extends Person {
@@ -181,7 +178,7 @@ const teacher = new Teacher('Mosh', 'MSc');
 ```
 
 
-##11. module
+## 11. module
 
 ```javascript
 // person.js
@@ -251,3 +248,6 @@ import Teacher, { promote } from './teacher';
 
 - default : import ... from '';
 - named : import { ... } from '';
+
+
+출처 : https://youtu.be/NCwa_xi0Uuc
