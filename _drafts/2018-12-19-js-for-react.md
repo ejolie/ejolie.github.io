@@ -72,6 +72,16 @@ const activeJobs_old = jobs.filter(function(job) { return job.isActive; });
 const activeJobs_new = jobs.filter(job => job.isActive);
 ```
 
+##### 매개변수가 없는 경우
+- `() => { statements }`  
+- `() => expression` : return 문만 있는 경우 {}를 생략할 수 있다.
+
+##### 매개변수가 있는 경우
+- `(param1, .. , paramN) => { statements }`
+- `(param1, .. , paramN) => expression`
+- `param1, .. , paramN => { statements }`
+- `param1, .. , paramN => expression`
+
 
 
 ## 5. call-back function
@@ -129,6 +139,9 @@ const { street, city, country } = address;
 const { street: st } = address;
 
 ```
+- 객체에서 필요한 요소만 뽑아 사용하는 것을 object destructor 라고 한다. 반복해서 사용하는 데이터를 새로운 변수에 저장하여 사용할 수 있다.
+- `const { street, city, country } = address;`는 _address_ 객체에서 street, city, country의 값을 같은 이름의 변수로 담은 것이다.
+- `const { street: st } = address;`처럼 street의 값을 st라는 다른 이름으로 받아 올 수도 있다.
 
 
 
