@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 확장 프로그램(Extensions)이란?
+title: &#127757;확장 프로그램(Extensions)이란?
 tags:
   - Chrome Extensions
 ---
 
+
+:+1:본 게시물은 [What are extensions?](https://developer.chrome.com/extensions) 을 한국어로 번역한 글입니다. 생활코딩 강의를 보고 크롬 익스텐션 개발에 관심을 갖게 되어 번역을 하게 되었습니다.&#128515;
 
 확장 프로그램은 브라우저 경험을 사용자화 할 수 있는 작은 소프트웨어 프로그램입니다. 확장 프로그램을 통해 사용자는 크롬의 기능과 동작을 자신의 요구와 선호에 따라 조정할 수 있습니다. 이것은 HTML, 자바스크립트, CSS와 같은 웹 기술로 만들어졌습니다.
 
@@ -18,7 +20,7 @@ tags:
 
 
 
-## Hello Extensions
+## &#128588;Hello Extensions
 
 Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 봅시다. 먼저, 확장 프로그램 파일들을 저장하기 위한 새로운 디렉토리를 만들거나 [sample page](https://developer.chrome.com/extensions/samples#search:hello) 에서 파일들을 다운받으세요.
 
