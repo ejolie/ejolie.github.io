@@ -26,7 +26,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 
 그 다음,  `manifest.json` 파일을 추가하고 다음의 코드를 작성해 넣으세요.
 
-```
+```json
   {
     "name": "Hello Extensions",
     "description" : "Base Level Extension",
@@ -37,7 +37,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 
 모든 확장 프로그램은 manifest 파일이 필요합니다. 하지만 대부분의 확장 프로그램은 manifest 파일만으로 많은 일을 하지 않습니다. 이 예제의 확장 프로그램은 [`browser_action`](https://developer.chrome.com/browserAction) 필드 아래에 선언된 팝업 파일과 아이콘을 갖고 있습니다.
 
-```
+```json
   {
     "name": "Hello Extensions",
     "description" : "Base Level Extension",
@@ -52,7 +52,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 
  [`hello_extensions.png` 이 파일](https://developer.chrome.com/static/images/index/hello_extensions.png) 을 다운받으세요.  `hello.html` 라는 이름의 파일을 생성하고 다음의 코드를 작성하세요.
 
-```
+```html
   <html>
     <body>
       <h1>Hello Extensions</h1>
@@ -62,7 +62,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 
 이제 확장 프로그램 아이콘이 클릭되었을 때 `hello.html` 파일이 보입니다. 다음 단계는 키보드 단축키 명령어를  `manifest.json` 안에 작성하는 것입니다. 이 단계는 흥미롭지만 필수적인 것은 아닙니다.
 
-```
+```json
   {
     "name": "Hello Extensions",
     "description" : "Base Level Extension",
