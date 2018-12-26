@@ -1,1 +1,3 @@
-Sitemap: https://ejolie.github.io/sitemap.xml
+User-agent: *
+Allow: /
+Sitemap: http://ejolie.github.io/sitemap.xml
