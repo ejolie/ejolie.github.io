@@ -20,7 +20,7 @@ tags:
 
 
 
-## 🙌Hello Extensions
+## 🙌 Hello Extensions
 
 Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 봅시다. 먼저, 확장 프로그램 파일들을 저장하기 위한 새로운 디렉토리를 만들거나 [sample page](https://developer.chrome.com/extensions/samples#search:hello) 에서 파일들을 다운받으세요.
 
@@ -50,7 +50,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
   }
 ```
 
- [`hello_extensions.png` 이 파일](https://developer.chrome.com/static/images/index/hello_extensions.png) 을 다운받으세요.  `hello.html` 라는 이름의 파일을 생성하고 다음의 코드를 작성하세요.
+ [`hello_extensions.png` 이 파일](https://developer.chrome.com/static/images/index/hello_extensions.png)을 다운받으세요.  `hello.html` 라는 이름의 파일을 생성하고 다음의 코드를 작성하세요.
 
 ```html
   <html>
@@ -91,11 +91,11 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 2. **개발자 모드(Developer Mode)** 옆의 박스를 체크하세요.
 3. **압축해제된 확장 프로그램을 로드합니다.(Load Unpacked Extension)** 를 누르고 당신의 "Hello Extensions" 확장 프로그램 디렉토리를 선택하세요.
 
-축하합니다! 당신은 이제 팝업 기반의 익스텐션을 사용할 수 있습니다. 이 `hello_world.png` 아이콘을 클릭하거나 또는 키보드의 `Ctrl+Shift+F`를 누르면 됩니다.
+축하합니다! 당신은 이제 팝업 기반의 익스텐션을 사용할 수 있습니다. `hello_world.png` 아이콘을 클릭하거나 키보드의 `Ctrl+Shift+F`를 누르면 됩니다.
 
 
 
-## 🤔다음으로는?
+## 🤔 다음으로는?
 
 1. [Getting Started tutorial](https://developer.chrome.com/getstarted) 를 진행하세요.
 2. [Overview](https://developer.chrome.com/overview) 를 읽어 보세요.
@@ -104,7 +104,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 
 
 
-## 🖥관련 영상
+## 🖥 관련 영상
 
 [Technical videos](http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B) 
 [Developer snapshots](http://www.youtube.com/view_play_list?p=38DF05697DE372B1)

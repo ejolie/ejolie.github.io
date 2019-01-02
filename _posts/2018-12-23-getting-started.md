@@ -12,13 +12,13 @@ tags:
 
 먼저, 확장 프로그램 파일들을 넣을 새로운 디렉토리를 생성해주세요. 
 
-완성된 확장 프로그램은 [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started_complete.zip) 에서 다운 받을 수 있습니다.
+완성된 확장 프로그램은 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started_complete.zip)에서 다운받을 수 있습니다.
 
 
 
-## 💪Manifest 생성하기
+## 💪 Manifest 생성하기
 
-확장 프로그램은 [manifest](https://developer.chrome.com/extensions/manifest) 파일과 함께 시작됩니다. `manifest.json` 파일을 생성하고 다음의 코드를 작성하세요. [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started/manifest.json) 서 코드를 다운받아도 됩니다.
+확장 프로그램은 [manifest](https://developer.chrome.com/extensions/manifest) 파일과 함께 시작됩니다. `manifest.json` 파일을 생성하고 다음의 코드를 작성하세요. [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/manifest.json)에서 코드를 다운받아도 됩니다.
 
 ```json
   {
@@ -40,9 +40,9 @@ tags:
 
 
 
-## 👍Instruction 추가하기
+## 👍 Instruction 추가하기
 
-확장 프로그램이 설치되었지만, instruction이 존재하지 않습니다.  `background.js` 파일을 만들어 [background script](https://developer.chrome.com/background_pages.html) 를 추가하거나  [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started/background.jsdownloading it) 에서 완성된 파일을 다운받을 수 있습니다. 이제 이 파일을 확장 프로그램 디렉토리 안에 넣어주세요.
+확장 프로그램이 설치되었지만, instruction이 존재하지 않습니다.  `background.js` 파일을 만들어 [background script](https://developer.chrome.com/background_pages.html) 를 추가하거나 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/background.js)에서 완성된 파일을 다운받을 수 있습니다. 이제 이 파일을 확장 프로그램 디렉토리 안에 넣어주세요.
 
 Background scripts 와 다른 많은 구성 요소들은 반드시 manifest 파일 안에 추가되어야 합니다. Backbround script를 manifest 파일 안에 기재하면, 확장 프로그램은 어떤 파일을 참조해야 하는지, 그 파일은 어떻게 동작해야 하는지를 알게 됩니다.
 
@@ -87,15 +87,15 @@ Background scripts 와 다른 많은 구성 요소들은 반드시 manifest 파�
   }
 ```
 
-확장 프로그램 관리 페이지로 돌아가 **Reload** 링크를 클릭하세요. 새로운 필드인 **뷰 검사(Inspect views)** 가 생겼고 오른쪽에는 **백그라운드 페이지(background page) ** 라는 파란색 링크가 생겼습니다.
+확장 프로그램 관리 페이지로 돌아가 **Reload** 링크를 클릭하세요. 새로운 필드인 **뷰 검사(Inspect views)** 가 생겼고 오른쪽에는 **백그라운드 페이지(background page)** 라는 파란색 링크가 생겼습니다.
 
 Background script의 콘솔 로그("`The color is green.`")를 보기 위해 링크를 클릭하세요.
 
 
 
-## 🙂User Interface 추가하기
+## 🙂 User Interface 추가하기
 
-확장 프로그램은  [사용자 인터페이스(user interface)](https://developer.chrome.com/user_interface) 의 다양한 형태를 갖고 있습니다. 여기서는 [팝업(popup)](https://developer.chrome.com/user_interface#popup) 을 사용해보려고 합니다. `popup.html` 파일을 만들어 디렉토리에 추가하세요. [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.html) 에서 다운을 받아도 됩니다. 이 확장 프로그램은 배경색을 변경하기 위해 버튼을 사용할 것입니다.
+확장 프로그램은  [사용자 인터페이스(user interface)](https://developer.chrome.com/user_interface) 의 다양한 형태를 갖고 있습니다. 여기서는 [팝업(popup)](https://developer.chrome.com/user_interface#popup) 을 사용해보려고 합니다. `popup.html` 파일을 만들어 디렉토리에 추가하세요. [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.html)에서 다운을 받아도 됩니다. 이 확장 프로그램은 배경색을 변경하기 위해 버튼을 사용할 것입니다.
 
 ```html
   <!DOCTYPE html>
@@ -134,7 +134,7 @@ Background script와 마찬가지로 이 파일은 manifest 파일의 [`page_act
   }
 ```
 
-툴바 아이콘 이미지 역시 `page_action`  의 `default_icons` 필드에 추가되어야 합니다.  [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started/images.zip) 에서 이미지 파일을 다운받고 압축을 풀어준 뒤, 확장 프로그램 디렉토리 안에 넣어주세요. 확장 프로그램이 이미지 파일을 어떻게 사용할지 알 수 있도록 manifest 파일을 업데이트 해주세요.
+툴바 아이콘 이미지 역시 `page_action` 의 `default_icons` 필드에 추가되어야 합니다. [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/images.zip)에서 이미지 파일을 다운받고 압축을 풀어준 뒤, 확장 프로그램 디렉토리 안에 넣어주세요. 확장 프로그램이 이미지 파일을 어떻게 사용할지 알 수 있도록 manifest 파일을 업데이트 해주세요.
 
 ```json
   {
@@ -190,7 +190,7 @@ Background script와 마찬가지로 이 파일은 manifest 파일의 [`page_act
   }
 ```
 
-이 단계에서 확장 프로그램을 다시 로드하면 회색의 아이콘을 볼 수 있습니다. 하지만 기능적으로 달라진 점은 없습니다.   `page_action` 이 manifest에 선언되어 있기 때문에, 언제 유저가 `popup.html` 과 상호작용을 하는지를 브라우저에게 말해주는 것은 확장 프로그램에게 달린 일입니다.
+이 단계에서 확장 프로그램을 다시 로드하면 회색의 아이콘을 볼 수 있습니다. 하지만 기능적으로 달라진 점은 없습니다. `page_action` 이 manifest에 선언되어 있기 때문에, 언제 유저가 `popup.html` 과 상호작용을 하는지를 브라우저에게 말해주는 것은 확장 프로그램에게 달린 일입니다.
 
 Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declarativeContent`](https://developer.chrome.com/declarativeContent) API와 함께 선언된 룰을 추가하세요.
 
@@ -226,7 +226,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 
 이제 유저가  `"developer.chrome.com"` 을 포함한 URL을 접속했을 때, 브라우저 툴바에는 알록달록한 페이지 액션 아이콘을 보여줄 것입니다. 아이콘이 색상을 가졌을 때, 유저는 아이콘을 눌러 popup.html을 볼 수 있습니다.
 
-팝업 UI를 위한 마지막 단계는 버튼에 색상을 추가하는 것입니다. `popup.js` 파일을 만들어 아래 코드를 작성하거나 [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.js) 에서 다운 받으세요.
+팝업 UI를 위한 마지막 단계는 버튼에 색상을 추가하는 것입니다. `popup.js` 파일을 만들어 아래 코드를 작성하거나 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.js)에서 다운 받으세요.
 
 ```javascript
   let changeColor = document.getElementById('changeColor');
@@ -254,7 +254,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 
 
 
-## 💡Layer Logic
+## 💡 Layer Logic
 
 확장 프로그램은 이제 [developer.chrome.com](https://developer.chrome.com/) 에서 사용자에게 팝업이 나타나야 한다는 사실을 알고 있으며 색상이 있는 버튼을 보여줍니다. 그러나 더욱 깊은 사용자와의 상호작용을 위해서는 로직이 필요합니다. `popup.js` 에 아래 코드를 추가하세요.
 
@@ -288,11 +288,11 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 
 
 
-## 😎사용자에게 Options 주기
+## 😎 사용자에게 Options 주기
 
 현재 확장 프로그램은 사용자가 배경색을 초록색으로 변경시키는 것만 가능하게 해줍니다. 옵션 페이지(options page)를 추가하게 되면 사용자에게 확장 프로그램의 기능에 대한 권한을 더 많이 부여하게 되며, 더 나아가 브라우저 경험을 사용자화할 수 있습니다.
 
-`options.html` 파일을 만들고 아래 코드를 작성하거나 [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started/options.html) 에서 다운받으세요.
+`options.html` 파일을 만들고 아래 코드를 작성하거나 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/options.html)에서 다운받으세요.
 
 ```html
   <!DOCTYPE html>
@@ -338,7 +338,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 
 
 
-마지막 단계는 옵션 로직을 추가하는 것입니다. `options.js` 파일을 확장 프로그램 디렉토리에 추가하고 다음의 코드를 작성하세요. 또는 [여기](https://developer.chrome.com/extensions/examples/tutorials/get_started/options.js) 에서 다운받으세요.
+마지막 단계는 옵션 로직을 추가하는 것입니다. `options.js` 파일을 확장 프로그램 디렉토리에 추가하고 다음의 코드를 작성하세요. 또는 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/options.js)에서 다운받으세요.
 
 ```javascript
   let page = document.getElementById('buttonDiv');
@@ -362,9 +362,9 @@ onclick 이벤트 리스너와 함께, 네 가지 색 옵션이 제공되며 옵
 
 
 
-## 🐾다음 단계로 나아가기
+## 🐾 다음 단계로 나아가기
 
-축하합니다! 이제 디렉토리는 비록 단순하기는 하지만, 모든 기능을 갖춘 크롬 확장 프로그램을 구성하고 있습니다.
+축하합니다! 이제 디렉토리는 비록 단순할지라도 모든 기능을 갖춘 크롬 확장 프로그램을 구성하고 있습니다.
 
 다음으로는?
 
