@@ -1,5 +1,6 @@
 ---
-layout:크롬 익스텐션 2. 시작 튜토리얼
+layout: post
+title: 크롬 익스텐션 2. 시작 튜토리얼
 tags:
   - Chrome Extensions
 ---
