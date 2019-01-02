@@ -6,7 +6,7 @@ permalink: /about/
 
 ### More Information
 
-I'm currently studying JavaScript and React.js.
+준비중
 
 ### Contact me
 
