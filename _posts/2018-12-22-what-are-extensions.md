@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 확장 프로그램(Extensions)이란?
+title: 크롬 익스텐션 1. 확장 프로그램(Extensions)이란?
 tags:
   - Chrome Extensions
 ---
