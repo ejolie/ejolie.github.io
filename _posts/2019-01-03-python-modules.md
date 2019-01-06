@@ -303,6 +303,6 @@ lotto.print_lotto(start, end, count)
 ```
 
 
-
+&nbsp;
 
 출처 : [SW Expert Academy] 파이썬 프로그래밍 기초(2) 파이썬의 기본 응용 - 1. 모듈과 패키지
