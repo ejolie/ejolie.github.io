@@ -6,7 +6,8 @@ tags:
 ---
 
 
-본 게시물은 [Getting Started Tutorial](https://developer.chrome.com/extensions/getstarted)을 한국어로 번역한 글입니다. 
+본 게시물은 [Getting Started Tutorial](https://developer.chrome.com/extensions/getstarted) 을 한국어로 번역한 글입니다. 
+
 확장 프로그램은 여러가지 구성 요소들의 결합을 통해 만들어집니다. 이 요소들은 [background scripts](https://developer.chrome.com/background_pages.html), [content scripts](https://developer.chrome.com/content_scripts.html),  [options page](https://developer.chrome.com/optionsV2), [UI elements](https://developer.chrome.com/user_interface.html) 와 다양한 로직 파일을 포함합니다. 확장 프로그램의 구성 요소들은 HTML, CSS, 자바스크립트와 같은 웹 개발 기술로 만들어집니다. 구성 요소들은 확장프로그램의 기능에 의존하며, 모든 옵션을 필요로하지 않을 수도 있습니다.
 
 이 튜토리얼은 유저가 [developer.chrome.com](https://developer.chrome.com/) 페이지의 배경색을 바꿀 수 있게 해주는 확장 프로그램을 개발하는 것입니다. 여기서는 확장 프로그램의 구성 요소 간의 관계를 보여주기 위해 많은 핵심 구성 요소들을 사용할 것입니다. 
