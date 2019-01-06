@@ -6,6 +6,7 @@ tags:
 ---
 
 
+본 게시물은 [Getting Started Tutorial](https://developer.chrome.com/extensions/getstarted)을 한국어로 번역한 글입니다. 
 확장 프로그램은 여러가지 구성 요소들의 결합을 통해 만들어집니다. 이 요소들은 [background scripts](https://developer.chrome.com/background_pages.html), [content scripts](https://developer.chrome.com/content_scripts.html),  [options page](https://developer.chrome.com/optionsV2), [UI elements](https://developer.chrome.com/user_interface.html) 와 다양한 로직 파일을 포함합니다. 확장 프로그램의 구성 요소들은 HTML, CSS, 자바스크립트와 같은 웹 개발 기술로 만들어집니다. 구성 요소들은 확장프로그램의 기능에 의존하며, 모든 옵션을 필요로하지 않을 수도 있습니다.
 
 이 튜토리얼은 유저가 [developer.chrome.com](https://developer.chrome.com/) 페이지의 배경색을 바꿀 수 있게 해주는 확장 프로그램을 개발하는 것입니다. 여기서는 확장 프로그램의 구성 요소 간의 관계를 보여주기 위해 많은 핵심 구성 요소들을 사용할 것입니다. 
@@ -50,7 +51,7 @@ Background scripts 와 다른 많은 구성 요소들은 반드시 manifest 파�
   {
     "name": "Getting Started Example",
     "version": "1.0",
-    "description": "Build an 확장 프로그램!",
+    "description": "Build an Extension!",
     "background": {
       "scripts": ["background.js"],
       "persistent": false
@@ -224,7 +225,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 
 
 
-이제 유저가  `"developer.chrome.com"` 을 포함한 URL을 접속했을 때, 브라우저 툴바에는 알록달록한 페이지 액션 아이콘을 보여줄 것입니다. 아이콘이 색상을 가졌을 때, 유저는 아이콘을 눌러 popup.html을 볼 수 있습니다.
+이제 유저가  `"developer.chrome.com"` 이 포함된 URL에 접속하면, 브라우저 툴바에 컬러로 된 페이지 액션 아이콘이 표시될 것입니다. 회색 아이콘이 컬러로 바뀌었을 때, 유저는 아이콘을 눌러 popup.html을 볼 수 있습니다.
 
 팝업 UI를 위한 마지막 단계는 버튼에 색상을 추가하는 것입니다. `popup.js` 파일을 만들어 아래 코드를 작성하거나 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.js)에서 다운 받으세요.
 
@@ -256,7 +257,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 &nbsp;
 ## 💡 Layer Logic
 
-확장 프로그램은 이제 [developer.chrome.com](https://developer.chrome.com/) 에서 사용자에게 팝업이 나타나야 한다는 사실을 알고 있으며 색상이 있는 버튼을 보여줍니다. 그러나 더욱 깊은 사용자와의 상호작용을 위해서는 로직이 필요합니다. `popup.js` 에 아래 코드를 추가하세요.
+확장 프로그램은 이제 [developer.chrome.com](https://developer.chrome.com/) 에 접속했을 때 사용자에게 팝업이 나타나야 한다는 사실을 알고 있으며, 컬러 버튼을 보여주게 됩니다. 그러나 사용자와의 더욱 깊은 상호작용을 위해서는 추가적인 로직이 필요합니다. `popup.js` 에 아래 코드를 추가하세요.
 
 ```javascript
   let changeColor = document.getElementById('changeColor');
@@ -271,9 +272,9 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
   };
 ```
 
-추가된 코드는 버튼에 onclick 이벤트를 추가합니다. 이제 버튼은 [프로그래밍 방식으로 삽입된 콘텐츠 스크립트(programatically injected content script)](https://developer.chrome.com/content_scripts#pi) 을 불러옵니다. 이것은 페이지의 배경색을 버튼과 같은 색으로 변경합니다.  웹 페이지에 자동으로 원하지 않는 코드를 삽입하는 방식 대신, 프로그래밍 방식 삽입은 사용자가 발생시킨 콘텐츠 스크립트를 허락합니다.
+추가된 코드는 버튼에 onclick 이벤트를 추가합니다. 이제 버튼은 [프로그래밍 방식으로 삽입된 콘텐츠 스크립트(programatically injected content script)](https://developer.chrome.com/content_scripts#pi)를 불러옵니다. 이것은 페이지의 배경색을 버튼과 같은 색으로 변경합니다. 웹 페이지에 자동으로 원하지 않는 코드를 삽입하는 방식 대신에, 프로그래밍 방식은 사용자가 발생시킨 콘텐츠 스크립트를 추가합니다.
 
-`tabs` API에 대한 확장 프로그램의 일시적인 접근을 허락하기 위해 manifest의 permission에 [`activeTab`](https://developer.chrome.com/확장 프로그램/activeTab) 을 추가하세요.  이것은 확장 프로그램이 [`tabs.executeScript`](https://developer.chrome.com/tabs#method-executeScript) 을 호출할 수 있게 해줍니다.
+확장 프로그램이 `tabs` API의 일시적인 접근을 허락할 수 있도록 manifest의 permission에 [`activeTab`](https://developer.chrome.com/extensions/activeTab) 을 추가하세요. 이것은 확장 프로그램이 [`tabs.executeScript`](https://developer.chrome.com/tabs#method-executeScript) 을 호출할 수 있게 해줍니다.
 
 ```json
   {
@@ -330,7 +331,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
   }
 ```
 
-확장 프로그램을 다시 로드하고 **세부정보(DETAILS)** 을 클릭하세요.
+확장 프로그램을 다시 로드하고 **세부정보(DETAILS)** 를 클릭하세요.
 
 
 
@@ -358,7 +359,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
   constructOptions(kButtonColors);
 ```
 
-onclick 이벤트 리스너와 함께, 네 가지 색 옵션이 제공되며 옵션 페이지의 버튼으로 생성됩니다.  사용자가 버튼을 누르면 확장 프로그램의 global storage에 있는 색상의 값을 업데이트 합니다. 확장 프로그램의 모든 파일들은 global storage로부터 색상의 정보를 받아오기 때문에, 다른 어떤 값도 업데이트될 필요가 없습니다.
+onclick 이벤트 리스너와 함께, 네 가지 색 옵션이 제공되며 옵션 페이지의 버튼으로 생성됩니다. 사용자가 버튼을 누르면 확장 프로그램의 global storage에 있는 색상 값을 업데이트 합니다. 확장 프로그램의 모든 파일은 global storage로부터 색상 정보를 받아오기 때문에, 다른 어떤 값도 업데이트될 필요가 없습니다.
 
 
 &nbsp;
@@ -368,9 +369,9 @@ onclick 이벤트 리스너와 함께, 네 가지 색 옵션이 제공되며 옵
 
 다음으로는?
 
-- The [Chrome Extension Overview](https://developer.chrome.com/overview) backs up a bit, and fills in a lot of detail about the 확장 프로그램 architecture in general, and some specific concepts developers will want to be familiar with.
-- Learn about the options available for debugging 확장 프로그램 in the [debugging tutorial](https://developer.chrome.com/tut_debugging).
-- Chrome 확장 프로그램 have access to powerful APIs above and beyond what's available on the open web. The [chrome.* APIs documentation](https://developer.chrome.com/api_index) will walk through each API.
-- The [developer's guide](https://developer.chrome.com/devguide) has dozens of additional links to pieces of documentation relevant to advanced 확장 프로그램 creation.
+- The [Chrome Extension Overview](https://developer.chrome.com/overview) backs up a bit, and fills in a lot of detail about the extension architecture in general, and some specific concepts developers will want to be familiar with.
+- Learn about the options available for debugging extension in the [debugging tutorial](https://developer.chrome.com/tut_debugging).
+- Chrome 확extension  have access to powerful APIs above and beyond what's available on the open web. The [chrome.* APIs documentation](https://developer.chrome.com/api_index) will walk through each API.
+- The [developer's guide](https://developer.chrome.com/devguide) has dozens of additional links to pieces of documentation relevant to advanced extension creation.
 
 Content available under the [CC-By 3.0 license](http://creativecommons.org/licenses/by/3.0/)
