@@ -19,7 +19,7 @@ tags:
 확장 프로그램은 [Chrome Developer Dashboard](https://chrome.google.com/webstore/developer/dashboard) 을 통해 배포되며 [Chrome Web Store](http://chrome.google.com/webstore) 에 출시됩니다. 더 많은 정보를 원한다면, [store developer documentation](http://code.google.com/chrome/webstore) 를 확인해보세요.
 
 
-
+&nbsp;
 ## 🙌 Hello Extensions
 
 Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 봅시다. 먼저, 확장 프로그램 파일들을 저장하기 위한 새로운 디렉토리를 만들거나 [sample page](https://developer.chrome.com/extensions/samples#search:hello) 에서 파일들을 다운받으세요.
@@ -94,7 +94,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 축하합니다! 당신은 이제 팝업 기반의 익스텐션을 사용할 수 있습니다. `hello_world.png` 아이콘을 클릭하거나 키보드의 `Ctrl+Shift+F`를 누르면 됩니다.
 
 
-
+&nbsp;
 ## 🤔 다음으로는?
 
 1. [Getting Started tutorial](https://developer.chrome.com/getstarted) 를 진행하세요.
@@ -103,7 +103,7 @@ Hello Extensions 예제를 통해 확장 프로그램 개발을 쉽게 배워 �
 4. [chromium-extensions group](http://groups.google.com/a/chromium.org/group/chromium-extensions) 을 구독하세요.
 
 
-
+&nbsp;
 ## 🖥 관련 영상
 
 [Technical videos](http://www.youtube.com/view_play_list?p=CA101D6A85FE9D4B) 

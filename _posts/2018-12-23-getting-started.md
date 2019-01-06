@@ -15,7 +15,7 @@ tags:
 완성된 확장 프로그램은 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started_complete.zip)에서 다운받을 수 있습니다.
 
 
-
+&nbsp;
 ## 💪 Manifest 생성하기
 
 확장 프로그램은 [manifest](https://developer.chrome.com/extensions/manifest) 파일과 함께 시작됩니다. `manifest.json` 파일을 생성하고 다음의 코드를 작성하세요. [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/manifest.json)에서 코드를 다운받아도 됩니다.
@@ -39,7 +39,7 @@ tags:
 짜잔! 확장 프로그램이 성공적으로 설치되었습니다. manifest 안에 아이콘이 없기 때문에, 확장 프로그램을 위한 일반적인 툴바 아이콘이 만들어질 것입니다.
 
 
-
+&nbsp;
 ## 👍 Instruction 추가하기
 
 확장 프로그램이 설치되었지만, instruction이 존재하지 않습니다.  `background.js` 파일을 만들어 [background script](https://developer.chrome.com/background_pages.html) 를 추가하거나 [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/background.js)에서 완성된 파일을 다운받을 수 있습니다. 이제 이 파일을 확장 프로그램 디렉토리 안에 넣어주세요.
@@ -92,7 +92,7 @@ Background scripts 와 다른 많은 구성 요소들은 반드시 manifest 파�
 Background script의 콘솔 로그("`The color is green.`")를 보기 위해 링크를 클릭하세요.
 
 
-
+&nbsp;
 ## 🙂 User Interface 추가하기
 
 확장 프로그램은  [사용자 인터페이스(user interface)](https://developer.chrome.com/user_interface) 의 다양한 형태를 갖고 있습니다. 여기서는 [팝업(popup)](https://developer.chrome.com/user_interface#popup) 을 사용해보려고 합니다. `popup.html` 파일을 만들어 디렉토리에 추가하세요. [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.html)에서 다운을 받아도 됩니다. 이 확장 프로그램은 배경색을 변경하기 위해 버튼을 사용할 것입니다.
@@ -253,7 +253,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 확장 프로그램을 새로고침하여 초록색 버튼을 확인하세요.
 
 
-
+&nbsp;
 ## 💡 Layer Logic
 
 확장 프로그램은 이제 [developer.chrome.com](https://developer.chrome.com/) 에서 사용자에게 팝업이 나타나야 한다는 사실을 알고 있으며 색상이 있는 버튼을 보여줍니다. 그러나 더욱 깊은 사용자와의 상호작용을 위해서는 로직이 필요합니다. `popup.js` 에 아래 코드를 추가하세요.
@@ -287,7 +287,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 확장 프로그램은 이제 모든 기능을 갖췄습니다! 확장 프로그램을 다시 불러오고, 이 페이지를 새로고침 해보세요. 팝업을 열고 버튼을 누르면 초록색으로 변합니다! 하지만, 어떤 유저들은 배경을 다른 색으로 바꾸고 싶어할 수도 있겠네요.
 
 
-
+&nbsp;
 ## 😎 사용자에게 Options 주기
 
 현재 확장 프로그램은 사용자가 배경색을 초록색으로 변경시키는 것만 가능하게 해줍니다. 옵션 페이지(options page)를 추가하게 되면 사용자에게 확장 프로그램의 기능에 대한 권한을 더 많이 부여하게 되며, 더 나아가 브라우저 경험을 사용자화할 수 있습니다.
@@ -361,7 +361,7 @@ Background script의 `runtime.onInstalled` 리스너 이벤트 안에, [`declara
 onclick 이벤트 리스너와 함께, 네 가지 색 옵션이 제공되며 옵션 페이지의 버튼으로 생성됩니다.  사용자가 버튼을 누르면 확장 프로그램의 global storage에 있는 색상의 값을 업데이트 합니다. 확장 프로그램의 모든 파일들은 global storage로부터 색상의 정보를 받아오기 때문에, 다른 어떤 값도 업데이트될 필요가 없습니다.
 
 
-
+&nbsp;
 ## 🐾 다음 단계로 나아가기
 
 축하합니다! 이제 디렉토리는 비록 단순할지라도 모든 기능을 갖춘 크롬 확장 프로그램을 구성하고 있습니다.
