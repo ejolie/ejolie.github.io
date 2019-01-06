@@ -6,9 +6,9 @@ tags:
 ---
 
 
-## 1. 표준 모듈과 활용 
+## 1. 표준 모듈과 활용
 
-### 💡 표준 모듈
+### 1) 표준 모듈 💡
 
 포준 모듈은 각기 목적에 맞게 설계되어 있습니다. 다양한 함수, 클래스 등을 제공하며, 별도의 추가 설치 과정 없이 import 문으로 로딩해 사용합니다.
 
@@ -53,8 +53,8 @@ print('pi = {0}'.format(pi))
 ```
 
 
-
-### 🧀 sys 모듈
+&nbsp;
+### 2) sys 모듈 🧀
 
 시스템과 관련된 정보에 접근하거나 명령행에서 전달된 명령행 매개변수로부터 인자 값을 읽어올 때 활용됩니다.
 
@@ -72,49 +72,47 @@ for i, val in enumerate(sys.argv): # Enumerate 객체로 변환 및 반복 실�
 ```
 
 
-
-### 🍭 random 모듈
+&nbsp;
+### 3) random 모듈 🍭
 
 난수(연속적인 임의의 수)를 생성하는 기능을 제공합니다.
-
-
+* random 함수 : 0.0 <= N < 1.0 범위의 부동소수점 난수 N 반환
+* uniform 함수 : 저장된 범위 내의 부동소수점 난수 N 반환
+* randrange 함수 : 정수형 난수 N 생성
+  * start 정보 생략 시 0, step 정보 생략 시 1이 기본값
+* choice 함수 : 인자로 전달된 시퀀스 객체의 항목 중 임의 항목 반환
+* choices 함수 : 인자로 전달된 시퀀스 객체의 항목 중 임의의 k개 반환, 복원 추출 기능을 가진 시뮬레이션 함수
+* sample 함수 : 인자로 전달된 시퀀스 객체, 혹은 set 객체의 항목 중 임의의 k개 반환, 비복원 기능을 가진 시뮬레이션 함수
+* shuffle 함수 : 인자로 전달된 시퀀스 객체의 항목을 뒤섞는 함수, 반환값은 없고 원본 객체의 항목의 순서를 뒤섞음
 
 ```python
 from random import random, uniform, randrange, choice, choices, sample, shuffle
 
 print('random() => {0}.format(random())')
-# random 함수 : 0.0 <= N < 1.0 범위의 부동소수점 난수 N 반환
 
 print('uniform({0}, {1}) => {2}'.format(1.0, 10.0, uniform(1.0, 10.0)))
-# uniform 함수 : 저장된 범위 내의 부동소수점 난수 N 반환
 
 start, stop, step = 1, 45, 2
 print('randrange({0}, {1}) => {2}'.format(start, stop, randrange(start, stop)))
-# randrange() 함수 : 정수형 난수 N 생성
 
 print('randrange({0}) => {1}'.format(stop, randrange(stop)))
-# start 정보 생략 시 0, step 정보 생략 시 1이 기본값
 
 print('randrange({0}, {1}, {2}) => {3}'.format(start, stop, step, randrange(start, stop, step)))
 
 data_list = [1, 2, 3, 4, 5]
 print('choice({0}) => {1}'.format(data_list, choice(data_list)))
-# choice() 함수 : 인자로 전달된 시퀀스 객체의 항목 중 임의 항목 반환
 
 print('choices({0}) => {1}'.format(data_list, choices(data_list, k=2)))
-# choices() 함수 : 인자로 전달된 시퀀스 객체의 항목 중 임의의 k개 반환, 복원 추출 기능을 가진 시뮬레이션 함수
 
 print('sample({0}) => {1}'.format(data_list, sample(data_list, k=2)))
-# sample() 함수 : 인자로 전달된 시퀀스 객체, 혹은 set 객체의 항목 중 임의의 k개 반환, 비복원 기능을 가진 시뮬레이션 함수
 
 shuffle(data_list)
 print('data_list => {0}'.format(data_list))
-# shuffle() 함수 : 인자로 전달된 시퀀스 객체의 항목을 뒤섞는 함수, 반환값은 없고 원본 객체의 항목의 순서를 뒤섞음
+
 ```
 
-
-
-### 📆 datetime 모듈
+&nbsp;
+### 4) datetime 모듈 📆 
 
 날짜와 시간 정보를 확인하고 조작하는 클래스, 함수 등을 제공합니다.
 
@@ -139,10 +137,10 @@ print(now.strftime(fmt).format(*'년월일시분초'))
 ```
 
 
-
+&nbsp;
 ## 2. 서드파티 모듈 설치 및 활용
 
-### 👫 서드파티 모듈
+### 1) 서드파티 모듈 👫 
 
 다른 누군가에 의해 만들어져 배포되고 공유되는 모듈입니다.
 
@@ -211,19 +209,19 @@ print(now_paris.strftime(fmt))
 
 
 
-### 모듈의 __ name __ 속성
+### 1) 모듈의 ```__name__``` 속성
 
-* 실행 목적의 모듈 : __ name __ 속성에 '__ main __' 문자열 값이 들어가 있음
-* 라이브러리 목적의 모듈 : __ name __ 속성에 모듈의 이름이 저장되어 있음
+* 실행 목적의 모듈 : ```__name__``` 속성에 ```__name__``` 문자열 값이 들어가 있음
+* 라이브러리 목적의 모듈 : ```__name__``` 속성에 모듈의 이름이 저장되어 있음
 
 
-
+&nbsp;
 ## 4. 사용자 정의 패키지 💁
 
-### 패키지 정의
+### 1) 패키지 정의
 
 * 폴더 생성 :  package_mycalc
-  * __ init __.py
+  * ```__init__```.py
   * module_mycalc_1.py
   * module_mycalc_2.py
 
@@ -234,15 +232,16 @@ __all__ = ['module_mycalc_1', 'module_mycalc_2']
 
 
 
-### 패키지 사용
+### 2) 패키지 사용
 
-`from package_mycalc import module_mycalc_1, module_mycalc_1`
+```python
+from package_mycalc import module_mycalc_1, module_mycalc_1
+from package_mycalc import
+```
 
-`from package_mycalc import`
 
 
-
-### 로또 번호 생성
+### 3) 로또 번호 생성
 
 ```python
 # lotto.py
@@ -299,6 +298,7 @@ count = lotto.input_count()
 
 lotto.print_lotto(start, end, count)
 ```
+
 
 
 
