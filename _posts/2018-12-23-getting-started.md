@@ -97,7 +97,7 @@ Background script의 콘솔 로그("`The color is green.`")를 보기 위해 링
 &nbsp;
 ## 🙂 User Interface 추가하기
 
-확장 프로그램은  [사용자 인터페이스(user interface)](https://developer.chrome.com/user_interface) 의 다양한 형태를 갖고 있습니다. 여기서는 [팝업(popup)](https://developer.chrome.com/user_interface#popup) 을 사용해보려고 합니다. `popup.html` 파일을 만들어 디렉토리에 추가하세요. [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.html)에서 다운을 받아도 됩니다. 이 확장 프로그램은 배경색을 변경하기 위해 버튼을 사용할 것입니다.
+확장 프로그램은 다양한 [사용자 인터페이스(user interface)](https://developer.chrome.com/user_interface) 를 갖고 있습니다. 여기서는 [팝업(popup)](https://developer.chrome.com/user_interface#popup) 을 사용해보려고 합니다. `popup.html` 파일을 만들어 디렉토리에 추가하세요. [이곳](https://developer.chrome.com/extensions/examples/tutorials/get_started/popup.html)에서 다운을 받아도 됩니다. 이 확장 프로그램은 배경색을 변경하기 위해 버튼을 사용할 것입니다.
 
 ```html
   <!DOCTYPE html>
