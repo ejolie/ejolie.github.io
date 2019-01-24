@@ -28,5 +28,6 @@ abs(a-b) <= sys.float_info.epsilon # True
 3. math 모듈을 통해 근사한 값인지 비교
 ```python
 import math
-math.isclose(a, b)
+math.isclose(a, b) # True
 ```
+&nbsp;
