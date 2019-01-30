@@ -31,7 +31,7 @@ tags:
 &nbsp;
 ### round(number[, ndigits])
 
-- _number_를 소수점 다음에 _ndigits_ 정밀도로 반올림한 값을 돌려줍니다. _ndigits_가 생략되거나 `None` 이면, 입력에 가장 가까운 정수를 돌려줍니다.
+- _number_ 를 소수점 다음에 _ndigits_ 정밀도로 반올림한 값을 돌려줍니다. _ndigits_ 가 생략되거나 `None` 이면, 입력에 가장 가까운 정수를 돌려줍니다.
 
 
 
@@ -63,7 +63,7 @@ tags:
 &nbsp;
 ### enumerate(iterable, start=0)
 
-- _iterable_은 시퀀스, 이터레이터 또는 이터레이션을 지원하는 다른 객체여야 합니다.
+- _iterable_ 은 시퀀스, 이터레이터 또는 이터레이션을 지원하는 다른 객체여야 합니다.
 - List, Tuple, 문자열과 같은 시퀀스형을 입력받아 index를 포함하는 Tuple 객체를 항목으로 구성하는 enumerate 객체를 반환합니다.
 - `enumerate()` 에 의해 반환된 이터레이터의 `__next__()` 메서드는 카운트 (기본값 0을 갖는 _start_ 부터)와 _iterable_을 이터레이션 해서 얻어지는 값을 포함하는 Tuple을 돌려줍니다.
 
@@ -93,12 +93,12 @@ def enumerate(sequence, start=0):
 
 - _function_ 이 참을 돌려주는 _iterable_ 의 요소들로 이터레이터를 구축합니다.
 - _iterable_ 은 시퀀스, 이터레이션을 지원하는 컨테이너 또는 이터레이터일 수 있습니다.
-- _funcion_이 `None`이면, 항등함수가 가정됩니다. 즉, 거짓인 _iterable_의 모든 요소가 제거됩니다.
+- _function_ 이 `None`이면, 항등함수가 가정됩니다. 즉, 거짓인 _iterable_ 의 모든 요소가 제거됩니다.
 
 `filter(function, iterable)` 은 다음 제너레이터 표현식과 같습니다.
 
-- _function_이 `None`이 아닐 때 `(item for item in iterable if function(item))`
-- _function_이 `None`일 때 `(item for item in iterable if item)`
+- _function_ 이 `None`이 아닐 때 `(item for item in iterable if function(item))`
+- _function_ 이 `None`일 때 `(item for item in iterable if item)`
 
 
 &nbsp;
@@ -137,7 +137,7 @@ def enumerate(sequence, start=0):
 - 반복 가능한 자료형(_iterable_) 에서 가장 큰 항목이나 두 개 이상의 인자 중 가장 큰 것을 돌려줍니다.
 - 여러 항목이 최댓값이면, 함수는 처음 만난 항목을 돌려줍니다. 
 - 선택적 _key_ 인자가 있습니다. `list.sort()` 에 사용되는 것처럼 단일 인자 순서 함수를 지정합니다. 
-- _default_ 인자는 제공된 _iterable_ 이 비어있는 경우 돌려줄 객체를 지정합니다. _iterable_이 비어 있고 `default` 가 제공되지 않으면 `ValueError`가 발생합니다.
+- _default_ 인자는 제공된 _iterable_ 이 비어있는 경우 돌려줄 객체를 지정합니다. _iterable_ 이 비어 있고 `default` 가 제공되지 않으면 `ValueError`가 발생합니다.
 
 
 &nbsp;
@@ -148,7 +148,7 @@ def enumerate(sequence, start=0):
 - 반복 가능한 자료형(_iterable_) 에서 가장 작은 항목이나 두 개 이상의 인자 중 가장 작은 것을 돌려줍니다.
 - 여러 항목이 최솟값이면, 함수는 처음 만난 항목을 돌려줍니다. 
 - 선택적 `key` 인자가 있습니다. `list.sort()` 에 사용되는 것처럼 단일 인자 순서 함수를 지정합니다. 
-- `default` 인자는 제공된 _iterable_ 이 비어있는 경우 돌려줄 객체를 지정합니다. _iterable_이 비어 있고 `default` 가 제공되지 않으면 `ValueError`가 발생합니다.
+- `default` 인자는 제공된 _iterable_ 이 비어있는 경우 돌려줄 객체를 지정합니다. _iterable_ 이 비어 있고 `default` 가 제공되지 않으면 `ValueError`가 발생합니다.
 
 
 &nbsp;
@@ -170,8 +170,8 @@ def enumerate(sequence, start=0):
 &nbsp;
 ### sorted(iterable, *, key=None, reverse=False)
 
-- _iterable_의 항목들로 새로 정렬된 리스트를 돌려줍니다. 두 개의 선택적 인자가 있습니다.
-- _key_ 는 하나의 인자를 받는 함수를 지정하는데, _iterable_의 각 요소들로부터 비교 키를 추출하는 데 사용됩니다. (예를 들어, `key = str.lower`) 기본값은 `None` 입니다 (요소를 직접 비교합니다).
+- _iterable_ 의 항목들로 새로 정렬된 리스트를 돌려줍니다. 두 개의 선택적 인자가 있습니다.
+- _key_ 는 하나의 인자를 받는 함수를 지정하는데, _iterable_ 의 각 요소들로부터 비교 키를 추출하는 데 사용됩니다. (예를 들어, `key = str.lower`) 기본값은 `None` 입니다 (요소를 직접 비교합니다).
 - _reverse_ 는 논리값입니다. 기본값은 오름차순이며 `True`로 설정되면 내림차순입니다.
 - 내장 `sorted()` 함수는 안정적(stable)임이 보장됩니다. 정렬은 같다고 비교되는 요소의 상대적 순서를 변경하지 않으면 안정적이라고 합니다. 
 
@@ -185,21 +185,21 @@ def enumerate(sequence, start=0):
 &nbsp;
 ### sum(iterable[, start])
 
-- _start_ 및 _iterable_의 항목들을 왼쪽에서 오른쪽으로 합하고 합계를 돌려줍니다.
-- _start_의 기본값은 `0` 입니다. _iterable_의 항목은 일반적으로 숫자이며 시작 값은 문자열이 될 수 없습니다.
+- _start_ 및 _iterable_ 의 항목들을 왼쪽에서 오른쪽으로 합하고 합계를 돌려줍니다.
+- _start_ 의 기본값은 `0` 입니다. _iterable_ 의 항목은 일반적으로 숫자이며 시작 값은 문자열이 될 수 없습니다.
 
 
 &nbsp;
 ### map(function, iterable, ...)
 
-- 두 번째 인자인 _iterable_의 모든 항목에 _function_ 을 적용한 후 그 결과를 돌려주는 이터레이터(Map 객체)를 돌려줍니다.
+- 두 번째 인자인 _iterable_ 의 모든 항목에 _function_ 을 적용한 후 그 결과를 돌려주는 이터레이터(Map 객체)를 돌려줍니다.
 
 
 &nbsp;
 ### zip(*iterables)
 
-- 각 _iterables_의 요소들을 모으는 이터레이터를 만듭니다. 
-- Tuple의 이터레이터를 돌려주는데, _i_번째 Tuple은 각 인자로 전달된 시퀀스나 이터러블의 _i_번째 요소를 포함합니다.  즉, 동일 위치의 항목을 묶어 Tuple을 항목으로 구성하는 Zip 객체를 생성해 반환합니다.
+- 각 _iterables_ 의 요소들을 모으는 이터레이터를 만듭니다. 
+- Tuple의 이터레이터를 돌려주는데, _i_ 번째 Tuple은 각 인자로 전달된 시퀀스나 이터러블의 _i_ 번째 요소를 포함합니다.  즉, 동일 위치의 항목을 묶어 Tuple을 항목으로 구성하는 Zip 객체를 생성해 반환합니다.
 - 이터레이터는 가장 짧은 입력 이터러블이 모두 소모되면 멈춥니다. 하나의 이터러블 인자를 사용하면, 1-Tuple의 이터레이터를 돌려줍니다. 인자가 없으면, 빈 이터레이터를 돌려줍니다.
 
 - `zip()`을 `*` 연산자와 함께 쓰면 List를 unzip 할 수 있습니다.
@@ -301,7 +301,7 @@ float('-Infinity')		# inf
 
 ### str(object=b'', encoding='utf-8', errors='strict')
 
-- _object_의 `str` 버전을 돌려줍니다. 
+- _object_ 의 `str` 버전을 돌려줍니다. 
 - `str`은 내장 문자열 클래스입니다.
 
 
@@ -381,7 +381,7 @@ float('-Infinity')		# inf
 &nbsp;
 ### open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
 
-- _file_을 열고 해당 File 객체를 돌려줍니다. 파일을 열 수 없으면, `OSError`가 발생합니다.
+- _file_ 을 열고 해당 File 객체를 돌려줍니다. 파일을 열 수 없으면, `OSError`가 발생합니다.
 - _file_ : 열고 싶은 파일의 (절대 혹은 상대적인)경로명
 - _mode_ : 파일이 열리는 모드를 지정하는 선택적 문자열.
   - `r` : 읽기용 (기본값)
