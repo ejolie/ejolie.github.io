@@ -15,20 +15,20 @@ print(0.1 * 3 == 0.3)   # False
 &nbsp;
 이를 해결하기 위해 세 가지 방법을 사용할 수 있습니다.
 
-1. 절댓값 비교
+### 1. 절댓값 비교
 ```python
 abs(a-b) <= 1e-10 # True
 ```
 
 &nbsp;
-2. float epsilon을 이용해 절댓값 비교
+### 2. float epsilon을 이용해 절댓값 비교
 ```python
 import sys
 abs(a-b) <= sys.float_info.epsilon # True
 ```
 
 &nbsp;
-3. math 모듈을 통해 근사한 값인지 비교
+### 3. math 모듈을 통해 근사한 값인지 비교
 ```python
 import math
 math.isclose(a, b) # True
