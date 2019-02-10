@@ -15,6 +15,7 @@ print(0.1 * 3 == 0.3)   # False
 &nbsp;
 이를 해결하기 위해 세 가지 방법을 사용할 수 있습니다.
 
+&nbsp;
 ### 1. 절댓값 비교
 ```python
 abs(a-b) <= 1e-10 # True
